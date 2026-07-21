@@ -1,0 +1,127 @@
+hrejkcirjijd uhldijfrojfndjfgor jfohsfkdlvkrhidkgght gtnvkkdbhdb dfgekwi w dfguhtgheurhjeksjbciwncshrfgiwjndjshfbjdnskhfbwehbfsbcskjdfbksbvskb
+jdbvjuhfbcsk ufjruwibn oeifjcdcnliejdfc ; hello hema
+db.Sales.insertMany([
+{
+    SaleID: 1,
+    SalespersonID: 101,
+    Region: "North",
+    Product: "Laptop",
+    Revenue: 50000
+},
+{
+    SaleID: 2,
+    SalespersonID: 102,
+    Region: "South",
+    Product: "Mobile",
+    Revenue: 30000
+},
+{
+    SaleID: 3,
+    SalespersonID: 101,
+    Region: "North",
+    Product: "Tablet",
+    Revenue: 15000
+},
+{
+    SaleID: 4,
+    SalespersonID: 103,
+    Region: "East",
+    Product: "Laptop",
+    Revenue: 60000
+},
+{
+    SaleID: 5,
+    SalespersonID: 104,
+    Region: "West",
+    Product: "Mobile",
+    Revenue: 45000
+},
+{
+    SaleID: 6,
+    SalespersonID: 102,
+    Region: "South",
+    Product: "Laptop",
+    Revenue: 55000
+},
+{
+    SaleID: 7,
+    SalespersonID: 103,
+    Region: "East",
+    Product: "Tablet",
+    Revenue: 20000
+},
+{
+    SaleID: 8,
+    SalespersonID: 105,
+    Region: "West",
+    Product: "Laptop",
+    Revenue: 70000
+},
+{
+    SaleID: 9,
+    SalespersonID: 101,
+    Region: "North",
+    Product: "Mobile",
+    Revenue: 25000
+},
+{
+    SaleID: 10,
+    SalespersonID: 104,
+    Region: "West",
+    Product: "Tablet",
+    Revenue: 10000
+}
+])
+
+db.Sales.find(
+  
+  {
+    Revenue:{$gt:50000}
+  
+  }
+)
+db.Sales.find(
+  
+  {
+    Revenue:{$lt:50000}
+  
+  }
+)
+db.Sales.find(
+  
+  {
+    Revenue:{$ne:50000}
+  
+  }
+)
+db.Sales.find(
+  
+  {
+    Revenue:{$eq:50000}
+  
+  }
+)
+db.Sales.find(
+  
+  {
+   Product:"Laptop"
+  
+  }
+)
+db.Sales.find(
+  
+  {
+   Product:"Mobile"
+  
+  }
+)
+db.Sales.find(
+  
+  {
+   Product:"Tablet"
+  
+  }
+)
+db.Sales.find({
+  Region:"North"
+})
