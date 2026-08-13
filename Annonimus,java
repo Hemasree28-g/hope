@@ -1,0 +1,17 @@
+class Demo{
+    public void A()
+    {
+        System.out.println("object created");
+    }
+    public void show()
+    {
+        System.out.println("yaa");
+    }
+}
+public class Annonimus{
+    public static void main(String args[])
+    {
+        new Demo();
+    }
+
+}
